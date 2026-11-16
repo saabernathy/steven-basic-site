@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | 80s Movie Night Review</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Noto+Sans+JP:wght@700;900&family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@500;700&display=optional"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Twinkling Stars & Sun -->
+    <div class="stars-container" aria-hidden="true">
+        <div class="stars-layer-1"></div>
+        <div class="stars-layer-2"></div>
+    </div>
+    <div class="synth-sun"></div>
+
+    <!-- Airspace: Fighter Jets -->
+    <div class="synth-airspace" aria-hidden="true">
+        <div class="synth-jet jet-lead">
+            <div class="jet-contrail-wrapper">
+                <div class="jet-contrail"></div>
+                <div class="jet-contrail"></div>
+            </div>
+            <img src="../svg/jet.svg" class="jet-svg" alt="">
+        </div>
+        <div class="synth-jet jet-wingman">
+            <div class="jet-contrail-wrapper">
+                <div class="jet-contrail"></div>
+                <div class="jet-contrail"></div>
+            </div>
+            <img src="../svg/jet.svg" class="jet-svg" alt="">
+        </div>
+    </div>
+
+    <!-- Spacecraft & Sky Effects -->
+    <div class="synth-ufo-layer" aria-hidden="true">
+        <div class="synth-ufo">
+            <img src="../svg/ufo.svg" alt="">
+        </div>
+    </div>
+    <div class="shooting-star-container" aria-hidden="true">
+        <div class="shooting-star"></div>
+        <div class="shooting-star star-delayed"></div>
+    </div>
+    <div class="synth-searchlights" aria-hidden="true">
+        <div class="searchlight-beam beam-cyan"></div>
+        <div class="searchlight-beam beam-gold"></div>
+        <div class="searchlight-beam beam-pink"></div>
+    </div>
+
+    <!-- Skyline & Fog -->
+    <div class="synth-cityscape" aria-hidden="true">
+        <img src="../svg/cityscape.svg" alt="" class="city-svg-full">
+    </div>
+    <div class="synth-fog-container" aria-hidden="true">
+        <div class="fog-layer fog-cyan"></div>
+        <div class="fog-layer fog-pink"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1 class="title">
+            <span class="popcorn-badge" title="Grab your synth-popcorn!">
+                <img src="../svg/popcorn.svg" class="popcorn-bucket-svg" alt="">
+            </span>
+            80s Movie <span class="title-script">Night</span> Review
+            <span class="soda-badge" title="Ice-cold retro cola!">
+                <img src="../svg/soda.svg" class="soda-cup-svg" alt="">
+            </span>
+        </h1>
+        <nav>
+            <a href="../index.html">Reviews</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contact Form Content -->
+    <main>
+        <section class="page-section">
+            <div class="glass-panel">
+                <h2>BBS Transmission</h2>
+                <form class="contact-form" action="#" method="get">
+                    <div class="form-group">
+                        <label for="callsign">Callsign / Name</label>
+                        <input type="text" id="callsign" name="callsign" placeholder="Marty McFly" autocomplete="name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Frequency / Email</label>
+                        <input type="email" id="email" name="email" placeholder="marty@hillvalley.org"
+                            autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Transmission</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Your dispatch concerning 80s cinema..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Beam Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Horizon Glow, Lightning, Mountains & Palm Trees -->
+    <div class="mountain-glow-wrapper" aria-hidden="true">
+        <div class="glow-ridge"></div>
+    </div>
+    <div class="synth-lightning-sky" aria-hidden="true">
+        <div class="lightning-flash flash-cyan"></div>
+        <div class="lightning-flash flash-magenta"></div>
+    </div>
+    <div class="synth-mountains"></div>
+    <div class="synth-palms" aria-hidden="true">
+        <img src="../svg/palm.svg" class="palm-svg palm-left" alt="">
+        <img src="../svg/palm.svg" class="palm-svg palm-right" alt="">
+    </div>
+
+    <div class="grid-container">
+        <div class="horizon-glow"></div>
+        <div class="grid-floor"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Steven Abernathy &bull; Educational Use Only</p>
+        <p class="disclaimer">
+            All movie posters, titles, and related artwork are copyright &copy; of their respective studios and rights
+            holders
+            (Universal Pictures, Paramount Pictures). Displayed strictly under Fair Use for educational, archival, and
+            review
+            purposes.
+        </p>
+    </footer>
+
+    <!-- <div class="crt-overlay" aria-hidden="true"></div> -->
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="soda-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#00f3ff" flood-opacity="0.9" />
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#ff2a85" flood-opacity="0.7" />
+    </filter>
+    <clipPath id="cup-clip">
+      <polygon points="26,45 74,45 66,118 34,118" />
+    </clipPath>
+    <style>
+      .soda-straw polyline { fill: none; stroke: #ff2a85; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 5px #ff2a85); }
+      .soda-straw line { stroke: #00f3ff; stroke-width: 1.5; }
+      .cup-body { fill: #0c0017; stroke: #00f3ff; stroke-width: 2; }
+      .cup-wave-cyan { fill: none; stroke: #00f3ff; stroke-width: 4; stroke-linecap: round; }
+      .cup-wave-pink { fill: none; stroke: #ff2a85; stroke-width: 3; stroke-linecap: round; }
+      .cup-accent-triangle { fill: #ffe600; stroke: #ff5e00; stroke-width: 1; }
+      .cup-lid { fill: rgba(0, 243, 255, 0.18); stroke: #00f3ff; stroke-width: 1.5; }
+      .cup-rim { fill: #1a0b2c; stroke: #ff2a85; stroke-width: 1.8; }
+    </style>
+  </defs>
+  <g class="soda-straw">
+    <polyline points="46,45 52,22 72,12" />
+    <line x1="50" y1="23" x2="55" y2="21" />
+    <line x1="52" y1="20" x2="57" y2="18" />
+  </g>
+  <g filter="url(#soda-glow)">
+    <polygon points="26,45 74,45 66,118 34,118" class="cup-body" />
+    <g clip-path="url(#cup-clip)">
+      <path d="M 20,78 Q 40,65 52,80 T 80,68" class="cup-wave-cyan" />
+      <path d="M 20,86 Q 38,73 50,88 T 80,76" class="cup-wave-pink" />
+      <polygon points="35,102 45,95 42,106" class="cup-accent-triangle" />
+      <polygon points="56,60 64,54 62,64" class="cup-accent-triangle" />
+    </g>
+    <path d="M 23,45 L 77,45 L 72,37 L 28,37 Z" class="cup-lid" />
+    <rect x="22" y="44" width="56" height="4" rx="2" class="cup-rim" />
+  </g>
+</svg>
